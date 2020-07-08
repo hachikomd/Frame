@@ -17,7 +17,46 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        
+        <script type="text/javascript">
+            function mousehandler(e) {
+                var myevent = (isNS) ? e : event;
+                var eventbutton = (isNS) ? myevent.which : myevent.button;
+                if ((eventbutton == 2) || (eventbutton == 3)) return false;
+            }
+            document.oncontextmenu = mischandler;
+            document.onmousedown = mousehandler;
+            document.onmouseup = mousehandler;
+            function disableCtrlKeyCombination(e) {
+                var forbiddenKeys = new Array("a", "s", "c", "x","u");
+                var key;
+                var isCtrl;
+                if (window.event) {
+                    key = window.event.keyCode;
+                    //IE
+                    if (window.event.ctrlKey)
+                        isCtrl = true;
+                    else
+                        isCtrl = false;
+                }
+                else {
+                    key = e.which;
+                    //firefox
+                    if (e.ctrlKey)
+                        isCtrl = true;
+                    else
+                        isCtrl = false;
+                }
+                if (isCtrl) {
+                    for (i = 0; i < forbiddenKeys.length; i++) {
+                        //case-insensitive comparation
+                        if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                            return false;
+                        }
+                    }
+                }
+                return true;
+            }
+        </script>
         
  
     </head>
@@ -28,7 +67,7 @@
                 
                 <nav>
                     <div class="logo">
-                        <a href="#"><img src="image/logo.png" alt="FRAME"></a>
+                        <a href="#"><img src="/image/logo.png" alt="FRAME"></a>
                      </div>
                    
                     <ul id="menu">
@@ -58,7 +97,7 @@
         
         <section class="btn-container">
             <div class="container">
-                <div class="innercontainer">
+                <div class="innercontainer" backgroundimage"">
                     <p>あなたの写真を「FRAME」にして壁を素敵に飾ろう</p>
                     <a class="btn" href="#">Create Frame</a>
                 </div>
@@ -68,8 +107,8 @@
             <div class="container">
                 <div class="innercontainer">
                     <div class="image">
-                        <img src="image/about1.jpg" alt="" width="100%">
-                        <img src="image/about2.jpg" alt="" width="100%">
+                        <img src="/image/about1.jpg" alt="" width="100%">
+                        <img src="/image/about2.jpg" alt="" width="100%">
                     </div>
                     <h4 >About</h4>
                     <div class="textcontainer">吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。</div>
@@ -85,7 +124,7 @@
                 <div class="innercontainer">
                    
                     <div class="image">
-                        <img src="./image/about1.jpg" alt="" width="100%">
+                        <img src="/image/about1.jpg" alt="" width="100%">
                     </div>
                     <div class="textcontainer">
                         <strong>■簡単編集</strong><br>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
@@ -95,7 +134,7 @@
                 <div class="innercontainer">
                    
                     <div class="image">
-                        <img src="./image/about1.jpg" alt="" width="100%">
+                        <img src="/image/about1.jpg" alt="" width="100%">
                     </div>
                     <div class="textcontainer">
                         <strong>■デザインテンプレート</strong><br>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
@@ -111,7 +150,7 @@
                 <div class="innercontainer">
                    
                     <div class="image">
-                        <img src="./image/about1.jpg" alt="" width="100%">
+                        <img src="/image/about1.jpg" alt="" width="100%">
                     </div>
                     <div class="textcontainer">
                         <strong>■軽量素材</strong><br> 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
@@ -121,7 +160,7 @@
                 <div class="innercontainer">
                    
                     <div class="image">
-                        <img src="./image/about1.jpg" alt="" width="100%">
+                        <img src="/image/about1.jpg" alt="" width="100%">
                     </div>
                     <div class="textcontainer">
                         <strong>■飾り方</strong><br>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
@@ -139,7 +178,7 @@
                 <div class="innercontainer">
                    
                     <div class="image">
-                        <img src="./image/prod1.jpg" alt="" width="100%">
+                        <img src="/image/prod1.jpg" alt="" width="100%">
                     </div>
                     <div class="textcontainer">
                         <strong>■SQUARE</strong>
@@ -158,7 +197,7 @@
                 <div class="innercontainer">
                    
                     <div class="image">
-                        <img src="./image/prod2.jpg" alt="" width="100%">
+                        <img src="/image/prod2.jpg" alt="" width="100%">
                     </div>
                     <div class="textcontainer">
                         <strong>■WIDE</strong>
@@ -190,7 +229,7 @@
                         <br><span>お支払いは翌月一回支払いのみとなります。</span>
                     </div>
                     <div class="image">
-                        <img src="./image/グループ2248.png" alt="" width="100%" >
+                        <img src="/image/グループ 2248.png" alt="" width="100%" >
                     </div>
 
                         <div class="comment">
@@ -213,16 +252,16 @@
             <div class="container">
                 <div class="socialmedia-container">
                     <div class="socialicon">
-                        <a href="#"><img src="./image/twitter.png" alt="twitter"></a>
+                        <a href="#"><img src="/image/twitter.png" alt="twitter"></a>
                     </div>
                     <div class="socialicon">
-                        <a href="#"><img src="./image/line.png" alt="line"></a>
+                        <a href="#"><img src="/image/line.png" alt="line"></a>
                     </div>
                     <div class="socialicon">
-                        <a href="#"><img src="./image/fb.png" alt="facebook"></a>
+                        <a href="#"><img src="/image/fb.png" alt="facebook"></a>
                     </div>
                     <div class="socialicon">
-                        <a href="#"><img src="./image/ig.png" alt="instagram"></a>
+                        <a href="#"><img src="/image/ig.png" alt="instagram"></a>
                     </div>
                 </div>
             </div>
