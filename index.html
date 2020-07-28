@@ -17,47 +17,7 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-            function mousehandler(e) {
-                var myevent = (isNS) ? e : event;
-                var eventbutton = (isNS) ? myevent.which : myevent.button;
-                if ((eventbutton == 2) || (eventbutton == 3)) return false;
-            }
-            document.oncontextmenu = mischandler;
-            document.onmousedown = mousehandler;
-            document.onmouseup = mousehandler;
-            function disableCtrlKeyCombination(e) {
-                var forbiddenKeys = new Array("a", "s", "c", "x","u");
-                var key;
-                var isCtrl;
-                if (window.event) {
-                    key = window.event.keyCode;
-                    //IE
-                    if (window.event.ctrlKey)
-                        isCtrl = true;
-                    else
-                        isCtrl = false;
-                }
-                else {
-                    key = e.which;
-                    //firefox
-                    if (e.ctrlKey)
-                        isCtrl = true;
-                    else
-                        isCtrl = false;
-                }
-                if (isCtrl) {
-                    for (i = 0; i < forbiddenKeys.length; i++) {
-                        //case-insensitive comparation
-                        if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
-                            return false;
-                        }
-                    }
-                }
-                return true;
-            }
-        </script>
-        
+              
  
     </head>
 
@@ -67,7 +27,7 @@
                 
                 <nav>
                     <div class="logo">
-                        <a href="#"><img src="image/logo.png" alt="FRAME"></a>
+                        <a href="#"><img src="/image/logo.png" alt="FRAME"></a>
                      </div>
                    
                     <ul id="menu">
@@ -88,35 +48,105 @@
             
         <!-- </section> -->
         <section class="herobanner">
-            <div class="slider">
+            <!-- <div class="slider">
+                <iframe class='slide' src="herobanner.html" frameborder="0" scrolling="no"></iframe>
                 <div class="slide">
-                   <p>オートスライド（ディゾルブ）が3〜6枚が入ります。</p>
+                     <p>オートスライド（ディゾルブ）が3〜6枚が入ります。</p> 
                 </div>
-            </div>
+            </div> -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel" data-slide-to="1"></li>
+                  <li data-target="#carousel" data-slide-to="2"></li>
+                  <li data-target="#carousel" data-slide-to="3"></li>
+                  <li data-target="#carousel" data-slide-to="4"></li>
+                  <li data-target="#carousel" data-slide-to="5"></li>
+                
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="#"><img src="image/slide_01.jpg" class="d-block w-100" alt="slide1"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#"><img src="image/slide_02.jpg" class="d-block w-100" alt="slide2"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#"><img src="image/slide_03.jpg" class="d-block w-100" alt="slide3"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#"><img src="image/slide_04.jpg" class="d-block w-100" alt="slide4"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#"><img src="image/slide_05.jpg" class="d-block w-100" alt="slide5"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#"><img src="image/slide_06.jpg" class="d-block w-100" alt="slide6"></a>
+                  </div>
+                  
+                </div>
+                <!-- <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a> -->
+               
+              </div>
         </section>
         
         <section class="btn-container">
             <div class="container">
-                <div class="innercontainer" backgroundimage"">
-                    <p>あなたの写真を「FRAME」にして壁を素敵に飾ろう</p>
+                <div class="innercontainer">
+                    <p>あなたの写真を「F R A M E 」にして壁を素敵に飾ろう</p>
                     <a class="btn" href="#">Create Frame</a>
                 </div>
             </div>
         </section>
-        <section id="about" class="about-container">
+
+
+        <!-- <section id="about" class="about-container">
             <div class="container">
                 <div class="innercontainer">
                     <div class="image">
-                        <img src="image/about1.jpg" alt="" width="100%">
-                        <img src="image/about2.jpg" alt="" width="100%">
+                        <img src="/image/about1.jpg" alt="" width="100%">
+                        <img src="/image/about2.jpg" alt="" width="100%">
                     </div>
                     <h4 >About</h4>
-                    <div class="textcontainer">吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。</div>
+                    <div class="textcontainer">【frame.Cafe】は、あなたの好きな写真をWEB上で編集して注文すると、印刷した写真をオリジナルの[FRAME]（フレーム）にしてお届けするサービスです。写真と文字をデザインテンプレートに入れるだけで、誰でも簡単におしゃれな[FRAME]をつくることができます。[FRAME]は[WIDE]と[SQUARE]の2種類。[WIDE]は業界最軽量、たったの90g。倍の大きさのSQUAREは170gを実現。壁の負担を最小限におさえ、オリジナルの留め具を使えば、簡単に角度調整をしながら取り付けることができます。価格もカジュアルプライスを実現し、注文後最短で翌々日の出荷でお届けいたします。あなたも素敵にお部屋の壁を飾ってみませんか。</div>
+                   
+                </div>
+            </div>
+
+        </section> -->
+
+        <section id="about" class="about-container">
+            <div class="container">
+                <div class="innercontainer">
+                    <div class="row">
+                        <div class="box col-lg-4" style="background-color: #00AACC;">
+                           <div class="Btext">業界最軽量　たったの98g</div>
+                           <div class="Stext">Lightest in the Industry</div>
+                        </div>
+                        <div class="box col-lg-4" style="background-color: #EE9900;">
+                            <div class="Btext">おしゃれ＋カジュアルプライス</div>
+                           <div class="Stext">High Cost Performance</div>
+                        </div>
+                        <div class="box col-lg-4" style="background-color: #72BE00;">
+                            <div class="Btext">短納期　最短翌々日で出荷</div>
+                            <div class="Stext">Quick Delivery</div>
+                        </div>
+                    </div>
+                    <h4 >About</h4>
+                    <div class="textcontainer">【frame.Cafe】は、あなたの好きな写真をWEB上で編集して注文すると、印刷した写真をオリジナルの[FRAME]（フレーム）にしてお届けするサービスです。写真と文字をデザインテンプレートに入れるだけで、誰でも簡単におしゃれな[FRAME]をつくることができます。[FRAME]は[WIDE]と[SQUARE]の2種類。[WIDE]は業界最軽量、たったの90g。倍の大きさのSQUAREは170gを実現。壁の負担を最小限におさえ、オリジナルの留め具を使えば、簡単に角度調整をしながら取り付けることができます。価格もカジュアルプライスを実現し、注文後最短で翌々日の出荷でお届けいたします。あなたも素敵にお部屋の壁を飾ってみませんか。</div>
                    
                 </div>
             </div>
 
         </section>
+
 
         <section id="how"class="how-container">
             <div class="container">
@@ -124,20 +154,21 @@
                 <div class="innercontainer">
                    
                     <div class="image">
-                        <img src="image/about1.jpg" alt="" width="100%">
+                        <img src="/image/template_editor.png" alt="" width="100%">
                     </div>
                     <div class="textcontainer">
-                        <strong>■簡単編集</strong><br>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+                        <strong>■テンプレートで簡単編集 </strong><br>[FRAME]をつくるには、[CREATE FRAME]ボタンから、【ログイン】画面を開き、はじめての方は、新規ユーザー登録をしてください。登録がお済みの方は、ログインをして、【MY-FRAME】画面にて、[+]ボタンで【編集】画面を開いてください。[WIDE]か[SQUARE]のブルーのアイコンを選択した後、各種テンプレートアイコンを選ぶと、左側の[FRAME]にテンプレートが反映されます。[FRAME]内の画像エリアから、お好きな写真を1点選び、アップロードします。黄色のボタン群で【拡大】【縮小】【回転】【トリミング】【写真の入れ替え】などを行い、写真を配置してください。
                     </div>
                                        
                 </div>
+                    <div class="spacer"><br></div>
                 <div class="innercontainer">
                    
                     <div class="image">
-                        <img src="image/about1.jpg" alt="" width="100%">
+                        <img src="/image/text_editor.png" alt="" width="100%">
                     </div>
                     <div class="textcontainer">
-                        <strong>■デザインテンプレート</strong><br>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+                        <strong>■タイトルを編集</strong><br>テキストエリアに、[タイトル]と[サブタイトル]と[コメント]を入力することができます。[ゴシック体]か[明朝体]の2種類の書体や[文字サイズ]、位置と[行揃え]などを左の画面を確認しながら選び、写真とのバランスをとります。また写真を全面にしたテンプレートを選んだときは、[文字色]を白に変えて、色の濃い場所に配置するなど、より雰囲気のある演出で、ポスターのような[FRAME]をつくることもできます。編集が完了したら右下の[PREVIEW]ボタンで【PREVEIW】画面を開いてデザインを確認してください。 よろしければ、[CART]ボタンから、【CART】画面へ進んでください。[EDIT]で【編集】画面に戻ることもできます。
                     </div>
                                        
                 </div>
@@ -150,24 +181,30 @@
                 <div class="innercontainer">
                    
                     <div class="image">
-                        <img src="image/about1.jpg" alt="" width="100%">
+                        <img src="/image/material.jpg" alt="" width="100%">
                     </div>
                     <div class="textcontainer">
-                        <strong>■軽量素材</strong><br> 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+                        <strong>■軽量素材と超マットな質感</strong><br>[FRAME]の木枠は天然木無垢材を使用しながら、[WIDE]はたったの90g、[SQUARE]は170gという軽さを実現し、壁への負担をなるべく掛けないよう工夫されています。アンティークでラフな塗装を施し、インテリアに優しく自然にとけ込みます。 また印刷の用紙には趣のある超マットな質感を使用することで、光の反射を受けにくく、写真が本来持つ色味を演出します。 印刷にはデジタルオフセット機を使用、用紙に馴染むしっとりとしたインクにより、用紙の質感をいかした表現を可能としています。
                     </div>
                                        
                 </div>
+                    <div class="spacer"><br></div>
                 <div class="innercontainer">
                    
                     <div class="image">
-                        <img src="image/about1.jpg" alt="" width="100%">
+                        <img src="/image/decorate.jpg" alt="" width="100%">
                     </div>
                     <div class="textcontainer">
-                        <strong>■飾り方</strong><br>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+                        <strong>■飾り方</strong><br>[FRAME]には、壁に飾る際の治具が同梱されています。[FRAME]の裏の中心には、4cmほどの穴があいています。同じ大きさの治具を壁に取り付けて、[FRAME]を差し込めば簡単に飾ることができます。また穴は[FRAME]の中心にあるので、角度の微調整も超楽に行えます。 この治具の接着強度は強いため、壁に取り付けるには、別途同梱されている、マスキングシールをご利用いただき、その上から、治具を取り付けてください。そうすることで剥がす際に壁を傷つけにくく、貼り直すことも比較的容易に行えます。
                     </div>
                             
                 </div>
-                <div class="spacer"></div>         
+
+                <div class="btncontainer">
+                    <a class="btn" href="#">Create Frame</a>
+                </div>
+
+                <div class="spacer2"></div>         
             </div>
                       
         </section>
@@ -178,41 +215,46 @@
                 <div class="innercontainer">
                    
                     <div class="image">
-                        <img src="image/prod1.jpg" alt="" width="100%">
+                        <img src="/image/prod2.jpg" alt="" width="100%">
+                    </div>
+                    <div class="textcontainer">
+                        <strong>■WIDE</strong>
+                        <br>
+                        <span>サイズ：140mm×290mm　厚み20mm <br>
+                            素材：天然木無垢材、背板は合板（アンティークオイル塗装） 
+                            <br>重さ：90g テンプレート数：18点（写真点数1〜12点）
+                            <br>テキスト入力項目：TITLE／SUBTITLE／COMMENT</span>
+                        <br>
+                        <span>────────────────────────</span>
+                        <br>
+                        <strong> 価格：2,500円（税抜き）送料 600円</strong>
+                    </div>
+                            
+                </div>
+                <div class="innercontainer">
+                   
+                    <div class="image">
+                        <img src="/image/prod1.jpg" alt="" width="100%">
                     </div>
                     <div class="textcontainer">
                         <strong>■SQUARE</strong>
                         <br>
-                        <span>サイズ：288mm×288mm　厚み20mm
-                        <br>素材：桐（アンティークオイル塗装） 
-                        <br>テンプレート数：22点（写真点数1〜12点）
-                        <br>テキスト入力項目：TITLE／SUBTITLE／COMMENT
+                        <span>サイズ：290mm×290mm　厚み20mm 
+                        <br>素材：天然木無垢材、背板は合板（アンティークオイル塗装） 
+                        <br>重さ：170g テンプレート数：22点（写真点数1〜12点） 
+                        <br>テキスト入力項目：TITLE／SUBTITLE／COMMENT 
                         <br>
-                        <span></span>
+                        <span>────────────────────────</span>
                         <br>
                         <strong>価格：3,500円（税抜）送料 600円</strong>
                     </div>
                                        
                 </div>
-                <div class="innercontainer">
-                   
-                    <div class="image">
-                        <img src="image/prod2.jpg" alt="" width="100%">
-                    </div>
-                    <div class="textcontainer">
-                        <strong>■WIDE</strong>
-                        <br>
-                        <span>サイズ：138mm×288mm　厚み20mm <br>
-                            素材：桐（アンティークオイル塗装
-                            <br>テンプレート数：18点（写真点数1〜12点
-                            <br>テキスト入力項目：TITLE／SUBTITLE／COMMENT </span>
-                        <br>
-                        <span></span>
-                        <br>
-                        <strong>価格：2,500円（税抜き）送料 600円</strong>
-                    </div>
-                            
+                
+                <div class="btncontainer">
+                    <a class="btn" href="#">Create Frame</a>
                 </div>
+
                 <div class="spacer"></div>         
             </div>
                       
@@ -229,7 +271,7 @@
                         <br><span>お支払いは翌月一回支払いのみとなります。</span>
                     </div>
                     <div class="image">
-                        <img src="image/グループ2248.png" alt="" width="100%" >
+                        <img src="/image/グループ2248.svg" alt="" width="100%" >
                     </div>
 
                         <div class="comment">
@@ -252,16 +294,16 @@
             <div class="container">
                 <div class="socialmedia-container">
                     <div class="socialicon">
-                        <a href="#"><img src="image/twitter.png" alt="twitter"></a>
+                        <a href="#"><img src="/image/twitter.png" alt="twitter"></a>
                     </div>
                     <div class="socialicon">
-                        <a href="#"><img src="image/line.png" alt="line"></a>
+                        <a href="#"><img src="/image/line.png" alt="line"></a>
                     </div>
                     <div class="socialicon">
-                        <a href="#"><img src="image/fb.png" alt="facebook"></a>
+                        <a href="#"><img src="/image/fb.png" alt="facebook"></a>
                     </div>
                     <div class="socialicon">
-                        <a href="#"><img src="image/ig.png" alt="instagram"></a>
+                        <a href="#"><img src="/image/ig.png" alt="instagram"></a>
                     </div>
                 </div>
             </div>

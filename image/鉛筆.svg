@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.40945 498.89764">
+  <defs>
+    <linearGradient id="名称未設定グラデーション_11" data-name="名称未設定グラデーション 11" y1="249.44882" x2="20.40945" y2="249.44882" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.99733" stop-color="#c9883d"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <linearGradient id="名称未設定グラデーション_22" data-name="名称未設定グラデーション 22" x1="7.65354" y1="7.79528" x2="12.75591" y2="7.79528" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8a8a8a"/>
+      <stop offset="0.51777" stop-color="#403d3c"/>
+      <stop offset="0.99733" stop-color="#231815"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <g style="isolation: isolate">
+    <g id="レイヤー_1" data-name="レイヤー 1">
+      <g>
+        <polygon points="0 62.362 10.205 0 20.409 62.362 20.409 498.898 0 498.898 0 62.362" fill="url(#名称未設定グラデーション_11)"/>
+        <polygon points="0 498.898 0 62.362 2.835 56.693 5.669 62.362 10.205 56.693 14.74 62.362 17.638 56.693 20.409 62.362 20.409 498.898 0 498.898" fill="#388639"/>
+        <polygon points="5.669 498.898 0 498.898 0 62.362 2.835 56.693 5.669 62.362 5.669 498.898" fill="#fff" opacity="0.5"/>
+        <polygon points="20.409 498.898 14.74 498.898 14.74 62.362 17.638 56.693 20.409 62.362 20.409 498.898" fill="#231815" opacity="0.65" style="mix-blend-mode: multiply"/>
+        <polyline points="7.654 15.591 10.205 0 12.756 15.591" fill="url(#名称未設定グラデーション_22)"/>
+      </g>
+    </g>
+  </g>
+</svg>
