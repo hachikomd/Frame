@@ -287,6 +287,7 @@ header nav ul li.active a {
 .herobanner .slide_ls .carousel .carousel-indicators li {
   width: 12px;
   height: 12px;
+  margin: 10px;
   border-radius: 100%;
   background-color: #333;
 }
@@ -295,6 +296,7 @@ header nav ul li.active a {
   bottom: -50px;
   color: #333;
   opacity: 0.25;
+  margin: 10px;
 }
 
 .btn-container .container {
