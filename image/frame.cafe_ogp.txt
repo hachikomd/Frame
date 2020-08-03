@@ -1,0 +1,11 @@
+<meta property=“og:title” content=“frame.cafe｜あなたの写真をFRAMEにして壁を素敵に飾ろう” />
+<meta property=“og:type” content=“website” />
+<meta property=“og:url” content=“https://www.frame.cafe” />
+<meta property=“og:image” content=“https://www.frame.cafe/static/img/common/ogp_frame.jpg” />
+<meta property=“og:site_name” content=“frame.cafe” />
+<meta property=“og:description” content=“「frame.cafe」は、あなたの写真と言葉をWEBで簡単デザイン編集、オリジナルなFRAMEを作成し、ご自宅へお届けするサービスです。” />
+
+<meta name=“twitter:card” content=“summary_large_image”>
+<meta name=“twitter:title” content=“FRAME.cafe｜あなたの写真をFRAMEにして壁を素敵に飾ろう”>
+<meta name=“twitter:description” content=“「frame.cafe」は、あなたの写真と言葉をWEBで簡単デザイン編集、オリジナルなFRAMEを作成し、ご自宅へお届けするサービスです。”>
+<meta name=“twitter:image” content=“https://www.frame.cafe/static/img/common/ogp_frame.jpg”>
