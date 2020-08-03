@@ -830,6 +830,12 @@ header nav ul li.active a {
   }
 }
 
+@media (max-width: 375px) {
+  .product-container2 .container .innercontainer .image {
+    margin-left: 30px;
+  }
+}
+
 .product-container2 .container .innercontainer .textcontainer {
   -webkit-box-flex: .60;
       -ms-flex: .60;

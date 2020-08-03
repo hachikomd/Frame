@@ -772,9 +772,9 @@ header{
                 // @media(max-width:420px){
                 //     margin-left: 40px;
                 // }
-                // @media(max-width:375px){
-                //     margin-left: 30px;
-                // }
+                @media(max-width:375px){
+                    margin-left: 30px;
+                }
             }
             .textcontainer{
                 flex: .60;
