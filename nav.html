@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FRAME</title>
+        <meta name="description" content="「frame.cafe」は、あなたの写真と言葉をWEBで簡単デザイン編集、オリジナルなFRAMEを作成し、ご自宅へお届けするサービスです。">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+        
+        <link rel="icon" href="favicon.png" type="image/x-icon">
+        
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script>
+            $('#toggle').click(function() {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open').show();
+            });
+
+            $('#overlay li').on('click', function(){
+            $('#overlay').hide();
+            $('#overlay').toggleClass('open');
+            $('#toggle').removeClass("active");
+            });
+        </script>
+ 
+    </head>
+
+    <body>
+        <!-- <section class="home-hearder"> -->
+            <header>
+                
+               <div class="container">
+                    <div class="logo">
+                        <a href="#"><img src="image/logo.png" alt="FRAME"></a>
+                     </div>
+                     <div id="overlay" class="overlay">
+                        <nav class="overlay-menu">
+                            <ul>
+                                <li class="overlay-li"><a class="nav-link" href="#">Top</a></li>
+                                <li><a class="nav-link" href="#about">About</a></li>
+                                <li><a class="nav-link" href="#how">How</a></li>
+                                <li><a class="nav-link" href="#product">Product</a></li>
+                                <li><a class="nav-link" href="#payment">Payment / delivery</a></li>
+                            </ul>
+                        </nav>  
+                    </div> 
+                    <div id="toggle" class="button_container">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                    </div>
+                
+                </div>
+            </header>
+
+            <script>
+                (function(d) {
+                  var config = {
+                    kitId: 'lzw4dyx',
+                    scriptTimeout: 3000,
+                    async: true
+                  },
+                  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+                })(document);
+              </script>
+    
+              <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    
+              <script>
+                function toggleMobileMenu(){
+                    document.querySelector('#menu').classList.toggle('active');
+                   
+                }
+            </script>
+            <script src="app.js"></script>
+            
+        </body>
+    </html>
