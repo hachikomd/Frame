@@ -233,7 +233,7 @@ header nav ul li.active a {
      object-position: 50%  120%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 480px) {
   .herobanner .slide_lg {
     display: none;
   }
@@ -251,39 +251,6 @@ header nav ul li.active a {
 }
 
 .herobanner .slide_lg .carousel .carousel-indicators {
-  bottom: -50px;
-}
-
-.herobanner .slide_lm {
-  display: none;
-}
-
-@media (max-width: 1000px) {
-  .herobanner .slide_lm {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media (max-width: 480px) {
-  .herobanner .slide_lm {
-    display: none;
-  }
-}
-
-.herobanner .slide_lm .carousel {
-  padding-top: 50px;
-}
-
-.herobanner .slide_lm .carousel .carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  background-color: #333;
-}
-
-.herobanner .slide_lm .carousel .carousel-indicators {
   bottom: -50px;
 }
 

@@ -215,7 +215,10 @@ header{
     // } 
     
     .slide_lg{
-        @media(max-width:1000px){
+        // @media(max-width:1000px){
+        //     display: none;
+        // }
+        @media(max-width:480px){
             display: none;
         }
         .carousel{
@@ -236,30 +239,30 @@ header{
         }
     }  
 
-    .slide_lm{
-        display: none;
-        @media(max-width:1000px){
-            display: flex;
-        }
-        @media(max-width:480px){
-            display: none;
-        }
-        .carousel{
-            // height: 60vh;
-            // position: relative;
-            .carousel-indicators li {
-                width: 10px;
-                height: 10px;
-                border-radius: 100%;
-                background-color: #333;
-            }
-            .carousel-indicators {
-                bottom: -50px;
-            }
-            padding-top: 50px;
+    // .slide_lm{
+    //     display: none;
+    //     @media(max-width:1000px){
+    //         display: flex;
+    //     }
+    //     @media(max-width:480px){
+    //         display: none;
+    //     }
+    //     .carousel{
+    //         // height: 60vh;
+    //         // position: relative;
+    //         .carousel-indicators li {
+    //             width: 10px;
+    //             height: 10px;
+    //             border-radius: 100%;
+    //             background-color: #333;
+    //         }
+    //         .carousel-indicators {
+    //             bottom: -50px;
+    //         }
+    //         padding-top: 50px;
            
-        }
-    }
+    //     }
+    // }
     .slide_ls{
         display: none;
         @media(max-width:480px){
