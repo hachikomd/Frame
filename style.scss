@@ -84,7 +84,7 @@ header{
         }
         label,label::after{
             // position: relative;
-            height: 4px;
+            height: 4.25px;
             width:26px;
             
             border-radius: 10px;
@@ -92,12 +92,13 @@ header{
             display: none;
             cursor: pointer;
             
-            @media(max-width:767px){
+            @media(max-width:768px){
               display: flex;
                 
             } 
         }
         label::after{
+            
             content: "";
             transform: translateY(8px);
             -webkit-transform: translateY(8px);
@@ -120,14 +121,14 @@ header{
             transition: ease 0.5s all;
             -webkit-transition: ease 0.5s all;
             display: flex;
-            // @media(max-width:1060px){
-            //     margin-left: auto;
-            // }
+             @media(max-width:1100px){
+                 margin-left: auto;
+            }
             @media(max-width:992px){
                 margin-left: auto;
              
             }
-            @media(max-width:767px){
+            @media(max-width:768px){
                 
                         opacity: 0;
                         max-height: 0px;
