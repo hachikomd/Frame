@@ -85,7 +85,6 @@ header nav .burger {
           align-items: center;
   padding: 0.5em;
   margin-left: auto;
-  cursor: pointer;
 }
 
 header nav #burger2 {
@@ -119,7 +118,7 @@ header nav label, header nav label::after {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 786px) {
   header nav label, header nav label::after {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -134,12 +133,12 @@ header nav label::after {
 }
 
 header nav #burger2:checked + label::after {
-  width: 0px;
+  visibility: hidden;
 }
 
 header nav #burger2:checked + label {
   transform: translateY(5px);
-  -webkit-transform: translateY(px);
+  -webkit-transform: translateY(5px);
 }
 
 header nav ul {
@@ -165,7 +164,7 @@ header nav ul {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 786px) {
   header nav ul {
     opacity: 0;
     max-height: 0px;
