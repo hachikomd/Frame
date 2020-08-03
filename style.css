@@ -287,7 +287,8 @@ header nav ul li.active a {
 .herobanner .slide_ls .carousel .carousel-indicators li {
   width: 12px;
   height: 12px;
-  margin: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
   border-radius: 100%;
   background-color: #333;
 }
@@ -308,6 +309,12 @@ header nav ul li.active a {
   .btn-container .container .innercontainer {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .btn-container .container .innercontainer {
+    margin-top: 49px;
   }
 }
 
