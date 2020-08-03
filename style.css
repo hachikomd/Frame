@@ -94,7 +94,7 @@ header nav #burger2 {
   display: flex;
   margin-left: auto;
   margin-right: 30px;
-  margin-top: -10px;
+  margin-top: -7px;
 }
 
 @media (max-width: 992px) {
@@ -306,7 +306,7 @@ header nav ul li.active a {
 .herobanner .slide_ls .carousel .carousel-indicators li {
   width: 10px;
   height: 10px;
-  padding: 5px;
+  padding: 3px;
   margin: 10px;
   border-radius: 100%;
   background-color: #333;
