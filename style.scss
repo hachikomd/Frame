@@ -40,7 +40,7 @@ header{
         display: flex;
         position: relative;
         .logo{
-            flex: .40;
+            flex: .54;
             display: flex;
             
             img{
@@ -50,7 +50,7 @@ header{
                 margin-top: 15px;
             }
             @media(max-width:1050px){
-                flex: .40;
+                flex: .30;
             }
           
             
@@ -76,7 +76,7 @@ header{
             display: flex;
             margin-left: auto;
             margin-right: 24px;
-            margin-top: -10px;
+            margin-top: -11px;
             // cursor: pointer;
             @media(max-width:992px){
                 visibility: hidden;
@@ -235,13 +235,15 @@ header{
             
             // position: relative;
             .carousel-indicators li {
-                width: 10px;
-                height: 10px;
+                width: 12px;
+                height: 12px;
                 border-radius: 100%;
                 background-color: #333;
             }
             .carousel-indicators {
                 bottom: -50px;
+                color: #333;
+                opacity: 0.25;
             }
             padding-top: 48px;
             .carousel-inner{
@@ -287,18 +289,17 @@ header{
             // height: 60vh;
             // position: relative;
             .carousel-indicators li {
-                width: 10px;
-                height: 10px;
-                padding: 3px;
-                margin: 10px;
+                width: 12px;
+                height: 12px;
                 border-radius: 100%;
                 background-color: #333;
             }
             .carousel-indicators {
-                bottom: -70px;
+                bottom: -50px;
+                color: #333;
+                opacity: 0.25;
             }
-            padding-top: 50px;
-           
+            padding-top: 48px;
         }
     }
     
@@ -410,17 +411,24 @@ header{
         .innercontainer{
             width: 100%;
             padding-top: 50px;
+
+            .spacer{
+                margin: 2.5px;
+            }
             
             .row{
+                width: 900px;
                 text-align: center;
                 display: flex;
-                
+                margin: 2.5px;
+                @media(max-width:991px){
+                    width: 100%;
+                    
+
+                }  
                 @media(max-width:480px){
-               
                     padding-left: 10px;
                     padding-right: 10px;
-                    
-                    
                 }  
                
                 .box{
@@ -428,24 +436,32 @@ header{
                     flex: 1;
                     padding-top: 5px;
                     padding-bottom: 5px;
-                    margin: 2.5px;
+                                      
+                    
                     @media(max-width:541px){
                         flex: 100%;
-     
-                     }      
+                    }      
                     .Btext{
                         color: white;
                         font-weight: bold;
                         font-size: 15px;
                         @media(max-width:991px){
-                            font-size: 14px;
-         
+                            font-size: 13px;
+                            
+                         }
+                         @media(max-width:767px){
+                            line-height: 150%;
+                            
                          }
                     }
                     .Stext{
                      color: white;
                      font-weight: bold;
                      font-size: 10px;
+                     @media(max-width:767px){
+                        line-height: 150%;
+                        
+                     }
                  }
                 }
             }
