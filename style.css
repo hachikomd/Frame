@@ -37,6 +37,7 @@ header {
 }
 
 header nav {
+  margin: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -54,13 +55,19 @@ header nav {
 }
 
 header nav .logo {
-  -webkit-box-flex: .46;
-      -ms-flex: .46;
-          flex: .46;
+  -webkit-box-flex: .40;
+      -ms-flex: .40;
+          flex: .40;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 20px;
+}
+
+header nav .logo img {
+  height: 20px;
+  margin-left: 24px;
+  margin-bottom: 13px;
+  margin-top: 15px;
 }
 
 @media (max-width: 1050px) {
@@ -93,8 +100,8 @@ header nav #burger2 {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-  margin-right: 30px;
-  margin-top: -7px;
+  margin-right: 24px;
+  margin-top: -10px;
 }
 
 @media (max-width: 992px) {
@@ -207,7 +214,8 @@ header nav ul li {
 
 header nav ul li a {
   display: block;
-  padding: .8m 2em;
+  margin-bottom: 14px;
+  margin-top: 15px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: black;
@@ -240,7 +248,7 @@ header nav ul li.active a {
 }
 
 .herobanner .slide_lg .carousel {
-  padding-top: 50px;
+  padding-top: 48px;
 }
 
 .herobanner .slide_lg .carousel .carousel-indicators li {
@@ -252,6 +260,10 @@ header nav ul li.active a {
 
 .herobanner .slide_lg .carousel .carousel-indicators {
   bottom: -50px;
+}
+
+.herobanner .slide_lg .carousel .carousel-inner .carousel-item {
+  max-height: 80vh;
 }
 
 .herobanner .slide_ls {
