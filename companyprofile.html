@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
         <title>FRAME</title>
         <meta name="description" content="「frame.cafe」は、あなたの写真と言葉をWEBで簡単デザイン編集、オリジナルなFRAMEを作成し、ご自宅へお届けするサービスです。">
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <!-- OGP -->
-        <meta property=“og:title” content=“frame.cafe｜あなたの写真をFRAMEにして壁を素敵に飾ろう” />
-        <meta property=“og:type” content=“website” />
-        <meta property=“og:url” content=“https://www.frame.cafe” />
-        <meta property=“og:image” content=“https://www.frame.cafe/static/img/common/ogp_frame.jpg” />
-        <meta property=“og:site_name” content=“frame.cafe” />
-        <meta property=“og:description” content=“「frame.cafe」は、あなたの写真と言葉をWEBで簡単デザイン編集、オリジナルなFRAMEを作成し、ご自宅へお届けするサービスです。” />
+        <meta property="og:title" content="frame.cafe｜あなたの写真を&quot;FRAME&quot;にして壁を素敵に飾ろう" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.frame.cafe" />
+        <meta property="og:image" content="https://www.frame.cafe/image/ogp_frame0804.png" />
+        <meta property="og:site_name" content="frame.cafe" />
+        <meta property="og:description" content="「frame.cafe」は、あなたの写真と言葉をWEBで簡単デザイン編集、オリジナルな&quot;FRAME&quot;を作成し、ご自宅へお届けするサービスです。" />
 
-        <meta name=“twitter:card” content=“summary_large_image”>
-        <meta name=“twitter:title” content=“FRAME.cafe｜あなたの写真をFRAMEにして壁を素敵に飾ろう”>
-        <meta name=“twitter:description” content=“「frame.cafe」は、あなたの写真と言葉をWEBで簡単デザイン編集、オリジナルなFRAMEを作成し、ご自宅へお届けするサービスです。”>
-        <meta name=“twitter:image” content=“https://www.frame.cafe/static/img/common/ogp_frame.jpg”>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="FRAME.cafe｜あなたの写真を&quot;FRAME&quot;にして壁を素敵に飾ろう">
+        <meta name="twitter:description" content="「frame.cafe」は、あなたの写真と言葉をWEBで簡単デザイン編集、オリジナルな&quot;FRAME&quot;を作成し、ご自宅へお届けするサービスです。">
+        <meta name="twitter:image" content="https://www.frame.cafe/image/ogp_frame0804.png">
+
+
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -25,6 +28,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
         
         <link rel="icon" href="favicon.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="image/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon-precomposed" href="image/favicons/apple-touch-icon-precomposed.png">
        
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -49,7 +54,23 @@
                 document.querySelector('#menu').classList.toggle('active')
             }
         </script>
-        
+         <!-- Facebook Pixel Code -->
+         <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '2816343168640969');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2816343168640969&ev=PageView&noscript=1"/>
+        </noscript>
+    <!-- End Facebook Pixel Code -->
 
     </head>
 
@@ -59,7 +80,7 @@
                 
         <nav>
             <div class="logo">
-                <a href="#"> <img src="/image/logo.svg" alt="FRAME"></a>
+                <a href="/"> <img src="image/logo.svg" alt="FRAME"></a>
              </div>
            
              <ul id="menu">
@@ -87,8 +108,8 @@
                     コンテンツワークス株式会社<br>
                     <div class="spacer"></div> 
                     <strong>■所在地 </strong><br>
-                    〒150-0001<br>
-                    東京都渋谷区神宮前3-42-2 VORT外苑前Ⅲ 6F<br> 
+                    〒107-0061<br>
+                    東京都港区北青山2-12-15　G-FRONT青山 4F<br> 
                     <div class="spacer"></div> 
                     <strong>■役員</strong><br>
                     代表取締役社長　荻野 明彦
@@ -120,7 +141,7 @@
             
             <div class="list"><a href="Termsofservice.html">ご利用規約</a></div> 
             <div class="listspacer">│</div> 
-            <div class="list"><a href="https://www.contentsworks.co.jp/privacy">プライバシーポリシー</a></div>
+            <div class="list"><a href="https://www.contentsworks.co.jp/privacy" target="_blank">プライバシーポリシー</a></div>
             <div class="listspacer">│</div> 
             <div class="list"><a href="TransactionAct.html">特定商取引法に基づく表記</a></div>
             <div class="listspacer">│</div> 
