@@ -432,12 +432,9 @@
                 <h5>お客様の作品集</h5>
                 <div class="innercontainer">
                    
-                    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;right:0px;left:0px;width:860px;height:620px;overflow:hidden;visibility:hidden;background-color:#FFF;">
-                        <!-- Loading Screen -->
-                        <!-- <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-                            <img style="margin-top:-19px;position:relative;top:0;width:38px;height:38px;" src="image/slide/spin.svg" />
-                        </div> -->
-                        <div data-u="slides" style="cursor:default;position:relative;top:10px;left:0px;width:840px;height:450px;overflow:hidden;"data-autocenter="1">
+                    <div id="jssor_1" class="jssor">
+                        
+                        <div data-u="slides" class="galslide" data-autocenter="1">
                             <div>
                                 <img data-u="image" src="image/slide/4050_840x450.jpg" />
                                 <img data-u="thumb" src="image/slide/4050_135x135.jpg" />
@@ -481,9 +478,9 @@
                         </div>
                         
                         <!-- Thumbnail Navigator -->
-                        <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:840px;height:160px;background-color:#FFF;" data-autocenter="1" data-scale-bottom="0.50">
+                        <div data-u="thumbnavigator" class="jssort101" data-autocenter="1" data-scale-bottom="0.50">
                             <div data-u="slides">
-                                <div data-u="prototype" class="p" style="width:135px;height:135px;">
+                                <div data-u="prototype" class="p">
                                     <div data-u="thumbnailtemplate" class="t"></div>
                                     <svg viewbox="0 0 16000 16000" class="cv">
                                         <circle class="a" cx="8000" cy="8000" r="3238.1"></circle>
@@ -512,9 +509,9 @@
                             
                 </div>
 
-                <div class="innercontainer-mobile">
+                <div class="innercontainer-mobile" > 
                    
-                    <div id="jssor_m" style="position:relative;margin:0 auto;top:0px;right:0px;left:0px;width:300px;height:300px;overflow:hidden;visibility:hidden;background-color:#FFF;">
+                    <div id="jssor_m" class="jssorm" style="position:relative;margin:0 auto;top:0px;right:0px;left:0px;width:300px;height:300px;overflow:hidden;visibility:hidden;background-color:#FFF;">
                         <!-- Loading Screen -->
                         
                         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:300px;height:300px;overflow:hidden;"data-autocenter="1">
@@ -552,14 +549,14 @@
                         </div>
                        
                         <!-- Arrow Navigator -->
-                        <div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:100px;left:10px;" data-scale="0.75">
+                        <div data-u="arrowleft" class="jssora106m" style="width:55px;height:55px;top:100px;left:10px;" data-scale="0.75">
                             <svg viewbox="0 0 16000 16000" style="position:absolute;top:30;left:0;width:100%;height:100%;">
                                 <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
                                 <polyline class="a" points="7930.4,5495.7 5426.1,8000 7930.4,10504.3 "></polyline>
                                 <line class="a" x1="10573.9" y1="8000" x2="5426.1" y2="8000"></line>
                             </svg>
                         </div>
-                        <div data-u="arrowright" class="jssora106" style="width:55px;height:55px;top:100px;right:10px;" data-scale="0.75">
+                        <div data-u="arrowright" class="jssora106m" style="width:55px;height:55px;top:100px;right:10px;" data-scale="0.75">
                             <svg viewbox="0 0 16000 16000" style="position:absolute;top:30;left:0;width:100%;height:100%;">
                                 <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
                                 <polyline class="a" points="8069.6,5495.7 10573.9,8000 8069.6,10504.3 "></polyline>
@@ -588,7 +585,7 @@
                         
                             
                             <h5>カスタマーレビュー</h5>
-                            
+                            <p>用途を教えてください</p>
                             <div class="chart-wrapper">
                                 <div class="chartcontainer">
                                     <canvas id="myChart"></canvas>
@@ -650,16 +647,14 @@
                                     </div>
                                     <div class="textcontainer">
                                         <strong>SSさん</strong>
-                                        <br>
+                                        
                                         <p>2020/10/13にレビュー
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                        <p>もっと大きいサイズを展開してほしい。品質はたいへん良いので大きいサイズがほしい。
-
-                                        </p>  
+                                            <span class="fa fa-star checked"></span><br>
+                                        もっと大きいサイズを展開してほしい。品質はたいへん良いので大きいサイズがほしい。</p>  
                 
                                         
                                      </div>
@@ -671,14 +666,14 @@
                                     </div>
                                     <div class="textcontainer">
                                         <strong>JIさん</strong>
-                                        <br>
+                                        
                                         <p>2020/10/13にレビュー
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                        <p>スクエアのほうが何度か壁からはがれて落ちてしまったので、できればオプションなどで黒のスポンジと接着部分の予備をつけられるようにしてほしいと思いました。 落下して一部キズがついていたので落ちないようにするコツがあればいいなと思いました。 あとは、photobackbizの用にビジネス用のプランができたら教えていただきたいです！もしすでにそのプランであれば申し訳ありません。 全体的にとても満足な商品です。
+                                            <span class="fa fa-star checked"></span><br>
+                                        スクエアのほうが何度か壁からはがれて落ちてしまったので、できればオプションなどで黒のスポンジと接着部分の予備をつけられるようにしてほしいと思いました。 落下して一部キズがついていたので落ちないようにするコツがあればいいなと思いました。 あとは、photobackbizの用にビジネス用のプランができたら教えていただきたいです！もしすでにそのプランであれば申し訳ありません。 全体的にとても満足な商品です。
 
                                         </p>  
                 
@@ -692,7 +687,7 @@
                                     </div>
                                     <div class="textcontainer">
                                         <strong>RYさん</strong>
-                                        <br>
+                                       
                                         <p>2020/10/13にレビュー
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
@@ -711,7 +706,7 @@
                                     </div>
                                     <div class="textcontainer">
                                         <strong>DAさん</strong>
-                                        <br>
+                                        
                                         <p>2020/10/13にレビュー
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
@@ -730,14 +725,14 @@
                                     </div>
                                     <div class="textcontainer">
                                         <strong>YMさん</strong>
-                                        <br>
+                                        
                                         <p>2020/10/13にレビュー
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star"></span>
-                                        <p>オプションで別料金でも良いので表面を透明なアクリル板などでカバーできると質感も上がって良いなと思いました。あとフレームの木目も数種類から選べると嬉しいです。
+                                            <span class="fa fa-star"></span><br>
+                                        オプションで別料金でも良いので表面を透明なアクリル板などでカバーできると質感も上がって良いなと思いました。あとフレームの木目も数種類から選べると嬉しいです。
                                         </p>  
                 
                                         
@@ -750,14 +745,14 @@
                                     </div>
                                     <div class="textcontainer">
                                         <strong>TOさん</strong>
-                                        <br>
+                                        
                                         <p>2020/10/13にレビュー
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star"></span>
-                                        <p>photoback bizのように、割引があると助かります。 貼り直しができるように、シールの別売があるといいと思います。
+                                            <span class="fa fa-star"></span><br>
+                                        photoback bizのように、割引があると助かります。 貼り直しができるように、シールの別売があるといいと思います。
                                         </p>  
                 
                                         
@@ -770,7 +765,7 @@
                                     </div>
                                     <div class="textcontainer">
                                         <strong>HAさん</strong>
-                                        <br>
+                                        
                                         <p>2020/10/14にレビュー
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
@@ -789,14 +784,14 @@
                                     </div>
                                     <div class="textcontainer">
                                         <strong>Mさん</strong>
-                                        <br>
+                                       
                                         <p>2020/10/13にレビュー
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                        <p>大きなサイズへの対応や写真の印刷の種類(光沢紙など)が選択できるようなると、また使いたくなります。
+                                            <span class="fa fa-star"></span><br>
+                                        大きなサイズへの対応や写真の印刷の種類(光沢紙など)が選択できるようなると、また使いたくなります。
                                         </p>  
                 
                                         
@@ -809,14 +804,14 @@
                                     </div>
                                     <div class="textcontainer">
                                         <strong>YOさん</strong>
-                                        <br>
+                                        
                                         <p>2020/10/14にレビュー
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                        <p>木枠、フレームがしっかり噛み合って収まってなく隙間が空いていました。 紙の質が安っぽいと感じます。
+                                            <span class="fa fa-star"></span><br>
+                                        木枠、フレームがしっかり噛み合って収まってなく隙間が空いていました。 紙の質が安っぽいと感じます。
                                         </p>  
                 
                                         
@@ -829,14 +824,14 @@
                                     </div>
                                     <div class="textcontainer">
                                         <strong>HAさん</strong>
-                                        <br>
+                                     
                                         <p>2020/10/14にレビュー
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star checked"></span>
                                             <span class="fa fa-star"></span>
                                             <span class="fa fa-star"></span>
-                                            <span class="fa fa-star"></span>
-                                        <p>フレームの上部が気になりましたので、上下反対にしてはどうかと思います。 プリント紙がもう少し硬い（補強）方がいいです。
+                                            <span class="fa fa-star"></span><br>
+                                        フレームの上部が気になりましたので、上下反対にしてはどうかと思います。 プリント紙がもう少し硬い（補強）方がいいです。
                                         </p>  
                 
                                         
