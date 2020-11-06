@@ -4,14 +4,15 @@ let ctx = document.getElementById('myChart').getContext('2d');
 let ctx2 = document.getElementById('myChart2').getContext('2d');
 let labels = ['ご自身用', 'プレゼント用', '再販', '商品サンプル'];
 let labels2 = ['5.最高', '4.まあまあ、期待以上', '3.普通。期待通り', '2.残念。期待外れ','1.二度と利用しない'];
-let colorHex = ['#00AACC', '#EE9900', '#72BE00', '#CC9E7A', '#F7CD8B'];
+let colorHex = ['#00AACC', '#EE9900', '#CC9E7A',];
+let colorHex2 = ['#00AACC', '#EE9900', '#72BE00', '#CC9E7A', '#F7CD8B'];
 
 let myChart = new Chart(ctx, {
   
   type: 'pie',
   data: {
     datasets: [{
-      data: [66.7, 25, 0, 8.3],
+      data: [66.7, 25, 8.3],
       backgroundColor: colorHex,
       
       
@@ -57,8 +58,8 @@ let myChart2 = new Chart(ctx2, {
   data: {
     
     datasets: [{
-      data: [33, 41.7, 16.7, 8.3,0],
-      backgroundColor: colorHex,
+      data: [33, 41.7, 16.7, 8.3,],
+      backgroundColor: colorHex2,
       
     }],
     labels: labels2
