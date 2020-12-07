@@ -344,14 +344,14 @@ header{
         
         margin-top: 34px;
         text-align: center;  
-        .innercontainer2{
+        .innercontainer3{
            
             .box{
                 border: solid 2px #000000;
             
                     
                     a{
-                    text-decoration: none;
+                         h1{
                     color: #333;
                     // border: solid 2px #000000;
                     font-weight: 700;
@@ -362,10 +362,10 @@ header{
                     @media(max-width:375px){
                         font-size: 13px;
                     }
-                     
+                     }
                     }
-                    
-                }
+                  
+                
                    
                       
                 
