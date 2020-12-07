@@ -300,9 +300,66 @@ header nav ul li.active a {
   margin: 10px;
 }
 
+.btn-container {
+  width: 100%;
+}
+
 .btn-container .container {
   margin-top: 34px;
   text-align: center;
+}
+
+.btn-container .container .innercontainer2 .box p {
+  border: solid 2px #000000;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 375px) {
+  .btn-container .container .innercontainer2 .box p {
+    font-size: 13px;
+  }
+}
+
+.btn-container .container .innercontainer2 .box p a {
+  color: #333;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .btn-container .container .innercontainer2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .btn-container .container .innercontainer2 {
+    margin-top: 49px;
+  }
+}
+
+.btn-container .container .innercontainer {
+  width: 100%;
+}
+
+.btn-container .container .innercontainer .btnnotice {
+  padding-top: 10px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #707070;
+  letter-spacing: 1px;
+}
+
+.btn-container .container .innercontainer .btnnotice2 {
+  margin-top: -10px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #707070;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 480px) {
@@ -550,6 +607,28 @@ header nav ul li.active a {
   }
 }
 
+.how-container .container .innercontainer2 {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.how-container .container .innercontainer2 .vidmedia {
+  padding-bottom: 50px;
+}
+
+.how-container .container .innercontainer2 .vidmedia video {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .how-container .container .innercontainer2 .vidmedia video {
+    width: 100%;
+  }
+}
+
 .how-container .container .innercontainer {
   width: 900px;
   display: -webkit-box;
@@ -606,7 +685,7 @@ header nav ul li.active a {
 }
 
 .product-container {
-  background-color: #DDDDDD;
+  background-color: #fff;
   width: 100%;
   padding-top: 50px;
 }
@@ -642,6 +721,22 @@ header nav ul li.active a {
 .product-container .container .btncontainer {
   padding-top: 50px;
   text-align: center;
+}
+
+.product-container .container .btncontainer .btnnotice {
+  padding-top: 10px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #707070;
+  letter-spacing: 1px;
+}
+
+.product-container .container .btncontainer .btnnotice2 {
+  margin-top: -10px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #707070;
+  letter-spacing: 1px;
 }
 
 .product-container .container .btncontainer a {
@@ -695,6 +790,33 @@ header nav ul li.active a {
   }
 }
 
+.product-container .container .innercontainer .prodsize img {
+  width: 100%;
+}
+
+.product-container .container .innercontainer .prodsizesub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.product-container .container .innercontainer .prodsizesub img {
+  padding: 1em;
+  width: 24.5%;
+}
+
+@media (max-width: 375px) {
+  .product-container .container .innercontainer .prodsizesub img {
+    display: none;
+    width: 50%;
+  }
+}
+
 .product-container .container .innercontainer .image {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -735,7 +857,6 @@ header nav ul li.active a {
 
 .product-container .container .spacer2 {
   padding-top: 60px;
-  border-bottom: 1px solid #707070;
 }
 
 .product-container2 {
@@ -765,6 +886,22 @@ header nav ul li.active a {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
+}
+
+.product-container2 .container .btncontainer .btnnotice {
+  padding-top: 10px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #707070;
+  letter-spacing: 1px;
+}
+
+.product-container2 .container .btncontainer .btnnotice2 {
+  margin-top: -10px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #707070;
+  letter-spacing: 1px;
 }
 
 .product-container2 .container .btncontainer a {
@@ -904,6 +1041,22 @@ header nav ul li.active a {
   text-align: center;
 }
 
+.gallery-container .container .btncontainer .btnnotice {
+  padding-top: 10px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #707070;
+  letter-spacing: 1px;
+}
+
+.gallery-container .container .btncontainer .btnnotice2 {
+  margin-top: -10px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #707070;
+  letter-spacing: 1px;
+}
+
 .gallery-container .container .btncontainer a {
   margin-top: 30px;
   display: inline-block;
@@ -941,7 +1094,6 @@ header nav ul li.active a {
 }
 
 .gallery-container .container .innercontainer {
-  width: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1122,7 +1274,6 @@ header nav ul li.active a {
 }
 
 .gallery-container .container .innercontainer-mobile {
-  width: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1218,6 +1369,22 @@ header nav ul li.active a {
   text-align: center;
 }
 
+.rating-container .container .btncontainer .btnnotice {
+  padding-top: 10px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #707070;
+  letter-spacing: 1px;
+}
+
+.rating-container .container .btncontainer .btnnotice2 {
+  margin-top: -10px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #707070;
+  letter-spacing: 1px;
+}
+
 .rating-container .container .btncontainer a {
   margin-top: 30px;
   display: inline-block;
@@ -1256,7 +1423,6 @@ header nav ul li.active a {
 
 .rating-container .container .innercontainer {
   background-color: #DDDDDD;
-  width: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1391,6 +1557,12 @@ header nav ul li.active a {
   padding-right: .5em;
 }
 
+@media (max-width: 412px) {
+  .rating-container .container .innercontainer .reviewcontainer {
+    padding-left: .75em;
+  }
+}
+
 .rating-container .container .innercontainer .reviewcontainer .review {
   height: 700px;
 }
@@ -1417,6 +1589,13 @@ header nav ul li.active a {
 .rating-container .container .innercontainer .reviewcontainer .review .reviewdata .textcontainer {
   padding-left: 1em;
   width: 80%;
+}
+
+@media (max-width: 412px) {
+  .rating-container .container .innercontainer .reviewcontainer .review .reviewdata .textcontainer {
+    padding-left: .5em;
+    padding-right: 1em;
+  }
 }
 
 .rating-container .container .innercontainer .reviewcontainer .review .reviewdata .textcontainer p {

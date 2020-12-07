@@ -339,11 +339,71 @@ header{
 }
 
 .btn-container{
+    width: 100%;
     .container{
+        
         margin-top: 34px;
         text-align: center;  
-         
+        .innercontainer2{
+           
+            .box{
+                border: solid 2px #000000;
+            
+                    
+                    a{
+                    text-decoration: none;
+                    color: #333;
+                    // border: solid 2px #000000;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    @media(max-width:375px){
+                        font-size: 13px;
+                    }
+                     
+                    }
+                    
+                }
+                   
+                      
+                
+            }
+            @media(max-width:480px){
+               
+                padding-left: 10px;
+                padding-right: 10px;
+                
+                
+            } 
+            @media(max-width:375px){
+               
+                margin-top: 49px;
+                 
+                 
+             }
+        }
+
         .innercontainer{
+            width: 100%;
+            .btnnotice{
+              padding-top: 10px;
+              font-size: 9px;
+              font-weight: 700;
+              color: #707070;
+              letter-spacing: 1px;
+              
+            }
+
+            .btnnotice2{
+                margin-top: -10px;
+                font-size: 9px;
+                font-weight: 700;
+                color: #707070;
+                letter-spacing: 1px;
+                
+              }
             @media(max-width:480px){
                
                 padding-left: 10px;
@@ -496,7 +556,6 @@ header{
                 font-size: 0.95rem;
                 letter-spacing: 1px;
                 text-align: justify;
-               
                 @media(max-width:991px){
                     width: 100%;
                     font-size: 13px;
@@ -564,6 +623,26 @@ header{
               }
         }
         // margin-top: 90px;
+
+        .innercontainer2{
+            align-content: center;
+            text-align: center;  
+            .vidmedia{
+                padding-bottom: 50px;
+                video{
+                    display: block; 
+                    width: 60%; 
+                    margin: 0 auto; 
+                    @media(max-width:480px){
+                        width: 100%; 
+                        
+                    }  
+                }
+                
+              
+            }
+        }
+
         .innercontainer{
             width: 900px;
            display: flex;
@@ -574,7 +653,9 @@ header{
        
             
         }
-        
+
+               
+            
 
             .image{
                 flex: 1;
@@ -608,7 +689,7 @@ header{
 }
 
 .product-container{
-    background-color: #DDDDDD;
+    background-color: #fff;
     width: 100%;
     padding-top: 50px;
     .container{
@@ -634,6 +715,23 @@ header{
                 
         }
         .btncontainer{
+            .btnnotice{
+                padding-top: 10px;
+                font-size: 9px;
+                font-weight: 700;
+                color: #707070;
+                letter-spacing: 1px;
+                
+              }
+  
+              .btnnotice2{
+                  margin-top: -10px;
+                  font-size: 9px;
+                  font-weight: 700;
+                  color: #707070;
+                  letter-spacing: 1px;
+                  
+                }
             padding-top: 50px;
             
             text-align: center;  
@@ -682,6 +780,30 @@ header{
        
             
         }
+        .prodsize{
+            img{
+                width: 100%;
+            }
+        }
+
+        .prodsizesub{
+            display: flex;
+            align-items: center;
+            align-content: center;
+                img{
+                    padding: 1em;
+                    width: 24.5%;
+                    @media(max-width:375px){
+                        display: none;
+                        width: 50%;
+                        
+                    } 
+                    
+                }
+            
+            
+        }
+        
             .image{
                 flex: 1;
                 padding-right: 30px;
@@ -712,7 +834,7 @@ header{
         
         .spacer2{
             padding-top: 60px;
-            border-bottom: 1px solid #707070;   
+            // border-bottom: 1px solid #707070;   
         }
         
     }
@@ -742,6 +864,23 @@ header{
             padding-top: 50px;
             padding-bottom: 50px;
             text-align: center;  
+            .btnnotice{
+                padding-top: 10px;
+                font-size: 9px;
+                font-weight: 700;
+                color: #707070;
+                letter-spacing: 1px;
+                
+              }
+  
+              .btnnotice2{
+                  margin-top: -10px;
+                  font-size: 9px;
+                  font-weight: 700;
+                  color: #707070;
+                  letter-spacing: 1px;
+                  
+                }
             a{
                 margin-top: 30px; 
                 display: inline-block;
@@ -899,6 +1038,23 @@ header{
             padding-top: 50px;
             padding-bottom: 50px;
             text-align: center;  
+            .btnnotice{
+                padding-top: 10px;
+                font-size: 9px;
+                font-weight: 700;
+                color: #707070;
+                letter-spacing: 1px;
+                
+              }
+  
+              .btnnotice2{
+                  margin-top: -10px;
+                  font-size: 9px;
+                  font-weight: 700;
+                  color: #707070;
+                  letter-spacing: 1px;
+                  
+                }
             a{
                 margin-top: 30px; 
                 display: inline-block;
@@ -936,7 +1092,7 @@ header{
         // margin-top: 90px;
         .innercontainer{
             
-           width: 900px;
+        //    width: 900px;
            display: flex;
            background-color: #fff;
            margin-bottom: 28px;
@@ -1078,7 +1234,7 @@ header{
         
         .innercontainer-mobile{
             
-            width: 900px;
+            // width: 900px;
             display: flex;
             background-color: #fff;
             margin-bottom: 28px;
@@ -1170,6 +1326,23 @@ header{
             padding-top: 50px;
             padding-bottom: 50px;
             text-align: center;  
+            .btnnotice{
+                padding-top: 10px;
+                font-size: 9px;
+                font-weight: 700;
+                color: #707070;
+                letter-spacing: 1px;
+                
+              }
+  
+              .btnnotice2{
+                  margin-top: -10px;
+                  font-size: 9px;
+                  font-weight: 700;
+                  color: #707070;
+                  letter-spacing: 1px;
+                  
+                }
             a{
                 margin-top: 30px; 
                 display: inline-block;
@@ -1207,7 +1380,7 @@ header{
         // margin-top: 90px;
         .innercontainer{
            background-color: #DDDDDD;
-           width: 900px;
+        //    width: 900px;
            display: flex;
            padding:0px;
         
@@ -1323,6 +1496,9 @@ header{
                 line-height: 20px;
                 padding-left:2em;
                 padding-right: .5em;
+                @media(max-width:412px){
+                    padding-left:.75em;
+                }
                 .review{
                     height: 700px;
                     .simplebar-scrollbar:before {
@@ -1331,6 +1507,7 @@ header{
                     .simplebar-scrollbar{
                         padding-right: 1px;
                         padding-left: 2px;
+                        
                     }
                     .reviewdata{
                         display: flex;
@@ -1343,6 +1520,10 @@ header{
                         .textcontainer{
                          padding-left: 1em;
                          width: 80%;
+                         @media(max-width:412px){
+                            padding-left: .5em;
+                            padding-right: 1em;
+                        }
                          p{
                             font-size: x-small;
                             padding: 0;
