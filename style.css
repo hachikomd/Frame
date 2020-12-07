@@ -309,12 +309,8 @@ header nav ul li.active a {
   text-align: center;
 }
 
-.btn-container .container .innercontainer3 .box {
+.btn-container .container .innercontainer2 .box p {
   border: solid 2px #000000;
-}
-
-.btn-container .container .innercontainer3 .box a h1 {
-  color: #333;
   font-weight: 700;
   letter-spacing: 1px;
   font-size: 18px;
@@ -323,20 +319,25 @@ header nav ul li.active a {
 }
 
 @media (max-width: 375px) {
-  .btn-container .container .innercontainer3 .box a h1 {
+  .btn-container .container .innercontainer2 .box p {
     font-size: 13px;
   }
 }
 
+.btn-container .container .innercontainer2 .box p a {
+  color: #333;
+  text-decoration: none;
+}
+
 @media (max-width: 480px) {
-  .btn-container .container .innercontainer3 {
+  .btn-container .container .innercontainer2 {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 
 @media (max-width: 375px) {
-  .btn-container .container .innercontainer3 {
+  .btn-container .container .innercontainer2 {
     margin-top: 49px;
   }
 }
