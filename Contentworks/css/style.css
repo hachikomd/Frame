@@ -153,10 +153,11 @@ table th {
 }
 
 #theme h3{
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.7rem;
   color: #53565A;
   text-align: left;
+  font-weight: 400;
 }
 
 #theme h4{
@@ -166,7 +167,7 @@ table th {
 }
 
 #theme p{
-  font-size: 15px;
+  font-size: 14px;
   line-height: .5rem;
   color: #53565A;
   text-align: left;
@@ -343,7 +344,7 @@ FOOTER
 #footer{
   margin: 0 auto;
   padding: 0 20px;
-  width: 1000px;
+  /* width: 1000px; */
   height: 175px;
   text-align: center;
 
@@ -392,7 +393,7 @@ FOOTER
 }
 @media screen and (max-width:640px){
 #footer{
-  padding: 16px 13px 70px 13px;
+  padding: 16px 13px 30px 13px;
   width: auto;
   height: auto;
 }
