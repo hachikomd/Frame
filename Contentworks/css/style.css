@@ -314,7 +314,12 @@ width: 11vw;
     }
   }
 
+  @media screen and (max-width: 1280px) {
 
+    #boxes .box img{
+      width: 15.2vw;
+        }
+  }
   @media screen and (max-width: 1024px) {
 
     #boxes .box img{
