@@ -1,8 +1,8 @@
 body {
   /* font: 15px/1.3 Noto Sans CJK JP,ヒラギノ明朝 Pro W3,NotoSansCJKsc-Regular-GBpc-EUC-H; */
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
   font-family: Hiragino Mincho Pro;
-  /* font-family: 'Sawarabi Gothic', sans-serif; */
+
   padding:0;
   padding-bottom: 100px;
   margin:0;
@@ -20,8 +20,8 @@ body {
 }
 
 @font-face {
-  font-family: 'ヒラギノ明朝 Pro W3';
-  /* src:  url('../assets/fonts/ヒラギノ明朝 Pro W3.otf') format('truetype'), */
+  font-family: Hiragino Mincho Pro;
+  src:  url('../assets/fonts/ヒラギノ明朝 Pro W3.otf') format('truetype'),
         url('../assets/fonts/NotoSansCJKjp.otf') format('truetype'),
         /* url('../assets/fonts/ヒラギノ明朝 Pro W3.otf') format('truetype'); */
         url('../assets/fonts/Hiragino Mincho Pro W3.otf') format('truetype');
