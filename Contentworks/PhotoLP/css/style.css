@@ -21,10 +21,10 @@ body {
 
 @font-face {
   font-family: 'ヒラギノ明朝 Pro W3';
-  src:  url('../assets/fonts/ヒラギノ明朝 Pro W3.otf') format('truetype'),
+  /* src:  url('../assets/fonts/ヒラギノ明朝 Pro W3.otf') format('truetype'), */
         url('../assets/fonts/NotoSansCJKjp.otf') format('truetype'),
         /* url('../assets/fonts/ヒラギノ明朝 Pro W3.otf') format('truetype'); */
-        /* url('../assets/fonts/Hiragino Mincho Pro W3.otf') format('truetype'); */
+        url('../assets/fonts/Hiragino Mincho Pro W3.otf') format('truetype');
         }
 
 
