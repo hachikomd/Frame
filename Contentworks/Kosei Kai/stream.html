@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <title>Kosei Kai</title>
+        <link rel="stylesheet" href="./css/style.css">
+
+  </head>
+  <body onload="initClock()">
+      <section class="idxheader">
+        <div class="dropdown">
+          <div class="logosec"><img src="img/user.png" class="dropbtn"><p>佐藤さん</p></div> 
+      <div class="dropdown-content">
+        <a href="entrance.html">佐藤さん</a>
+        <a href="news.html">お知らせ</a>
+        <a href="index.html">TOPに戻る</a>
+      </div>
+    </div>
+
+    </section>
+
+    <section class="header5" >
+      <div class="datetime" style="float:right;">
+        <div class="time">
+          <span id="hour">00</span>:
+          <span id="minutes">00</span>
+          <span id="period">AM</span>
+        </div>
+        <div class="date">
+          <span id="year">Year</span>
+          <span id="dayname">Day</span>,
+          <span id="month">Month</span>
+          <span id="daynum">00</span>,
+
+        </div>
+      </div>
+      <div class="container5" >
+        <iframe src="https://ml.visuamall.com/ml5/shimada/api/embedded/?em=TAq82BgsPlVlsWswyrraIw..Qb22undhLZm7kNuev9YWWA.." width="850" height="480" scrolling="no" style="border:none;" allowfullscreen></iframe>
+      </div>
+
+   
+      
+  </section>
+
+    <!--digital clock end-->
+
+    <script type="text/javascript">
+    function updateClock(){
+      var now = new Date();
+      var dname = now.getDay(),
+          mo = now.getMonth(),
+          dnum = now.getDate(),
+          yr = now.getFullYear(),
+          hou = now.getHours(),
+          min = now.getMinutes(),
+          sec = now.getSeconds(),
+          pe = "AM";
+
+          if(hou >= 12){
+            pe = "PM";
+          }
+          if(hou == 0){
+            hou = 12;
+          }
+          if(hou > 12){
+            hou = hou - 12;
+          }
+
+          Number.prototype.pad = function(digits){
+            for(var n = this.toString(); n.length < digits; n = 0 + n);
+            return n;
+          }
+
+          var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+          var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+          var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+          var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+          for(var i = 0; i < ids.length; i++)
+          document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+    }
+
+    function initClock(){
+      updateClock();
+      window.setInterval("updateClock()", 1);
+    }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+
+function isElementInViewport (el) {
+      //special bonus for those using jQuery
+      if (typeof jQuery === "function" && el instanceof jQuery) {
+        el = el[0];
+      }
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+      );
+    }
+
+
+    // click-to-scroll behavior
+    $("a").click(function (e) {
+      e.preventDefault();
+      var section = this.href;
+      var sectionClean = section.substring(section.indexOf("#"));
+      $("html, body").animate({
+        scrollTop: $(sectionClean).offset().top
+      }, 1000, function () {
+        window.location.hash = sectionClean;
+      });
+    });
+
+    // listen for the scroll event
+    $(document).on("scroll", function() {
+      //console.log("onscroll event fired...");
+      // check if the anchor elements are visible
+      $(".common").each(function (idx, el) {
+        if ( isElementInViewport(el) ) {
+          // update the URL hash
+          if (window.history.pushState) {
+            var urlHash = "#" + $(el).attr("id");
+			window.history.pushState(null, null, urlHash);
+          }
+        }
+      });
+    });
+
+
+</script>
+
+
+
+
+  </body>
+</html>
