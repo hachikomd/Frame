@@ -104,22 +104,51 @@ color: #FFF;
 }
 
 .time span:not(:last-child){
-    color: #fff;
-  position: relative;
-  margin: 0 6px;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 3px;
+  color: #fff;
+position: relative;
+margin: 0 6px;
+font-weight: 600;
+text-align: center;
+letter-spacing: 3px;
 }
 
 .time span:last-child{
-    color: #fff;
-  font-size: 30px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-top: 10px;
-  padding: 0 5px;
+  color: #fff;
+font-size: 30px;
+font-weight: 600;
+text-transform: uppercase;
+margin-top: 10px;
+padding: 0 5px;
 }
+
+
+.timew{
+  color: #000;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timew span:not(:last-child){
+  color: black;
+position: relative;
+margin: 0 6px;
+font-weight: 600;
+text-align: center;
+letter-spacing: 3px;
+}
+
+.timwe span:last-child{
+  color: black;
+font-size: 30px;
+font-weight: 600;
+text-transform: uppercase;
+margin-top: 10px;
+padding: 0 5px;
+}
+
+
 .container{
   width: 100%;
   margin:auto;
