@@ -37,10 +37,10 @@
 
         </div>
       </div>
-        <img src="img/kosei2.png" style="padding:50px 0px 0px 200px;">
+        <img src="https://hachikomd.github.io/FRAME/Contentworks/KoseiKai/img/kosei2.png" style="padding:50px 0px 0px 200px;">
         <div class="container3" >
           <h1>代表社員	洪 耕一</h1>
-          <img src="img/head.png">
+          <img src="https://hachikomd.github.io/FRAME/Contentworks/KoseiKai/img/head.png">
           <p>2021.07.22</p>
           <p>大聖堂で「盂蘭盆会」　庭野会長が法話　行供養の大切さを説く　（動画あり）</p>
           <p align="left">2021.07.22</p>
@@ -104,53 +104,6 @@
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-<script>
-
-function isElementInViewport (el) {
-      //special bonus for those using jQuery
-      if (typeof jQuery === "function" && el instanceof jQuery) {
-        el = el[0];
-      }
-      var rect = el.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
-      );
-    }
-
-
-    // click-to-scroll behavior
-    $("a").click(function (e) {
-      e.preventDefault();
-      var section = this.href;
-      var sectionClean = section.substring(section.indexOf("#"));
-      $("html, body").animate({
-        scrollTop: $(sectionClean).offset().top
-      }, 1000, function () {
-        window.location.hash = sectionClean;
-      });
-    });
-
-    // listen for the scroll event
-    $(document).on("scroll", function() {
-      //console.log("onscroll event fired...");
-      // check if the anchor elements are visible
-      $(".common").each(function (idx, el) {
-        if ( isElementInViewport(el) ) {
-          // update the URL hash
-          if (window.history.pushState) {
-            var urlHash = "#" + $(el).attr("id");
-			window.history.pushState(null, null, urlHash);
-          }
-        }
-      });
-    });
-
-
-</script>
 
 
 
