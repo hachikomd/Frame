@@ -1803,9 +1803,14 @@ color: #444444;
 }
 
 .colbrd{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.colbrd a{
   float: left;
   width: 50%;
 }
+
 .rowbrd:after{
   content: "";
   display: table;
