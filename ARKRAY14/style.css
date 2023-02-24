@@ -580,7 +580,7 @@ select {
 
 .colsec5 h1{
   
-  font-size: 9vw;
+  font-size: 12em;
   line-height: 1em;
   font-family: oswald;
   width: 20vw;
@@ -594,10 +594,17 @@ select {
   transition: .6s;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .colsec5 h1{
-  font-size: 13vw;
- }
+    font-size: 10em;
+   
+  }
+}
+@media screen and (max-width: 1080px) {
+  .colsec5 h1{
+    font-size: 8em;
+   
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -1188,15 +1195,37 @@ table.b th{
   margin: 5vw;
   
 }
-
-
-
-@media screen and (width: 780px) {
+@media screen and (max-width: 1080px) {
   .cntrdiv {
-   padding: 0px 30px 30px 30px;
+   margin: 0;
+   padding: 20px;
    }
+   .cntrdiv p{
+    font-size: .8em;
+    }
 }
 
+
+@media screen and (max-width: 780px) {
+  .cntrdiv {
+   margin: 0;
+   padding: 20px;
+   }
+   .cntrdiv h3{
+    font-size: .7em;
+    }
+
+   .colbf .cntrdiv p{
+    font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 414px) {
+  .cntrdiv {
+   margin: 0;
+   padding: 10px;
+   }
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -1746,7 +1775,7 @@ color: #444444;
   .colbf{
     float: left;
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
   }
 
 }
@@ -1754,7 +1783,7 @@ color: #444444;
   .colbf{
     float: left;
     width: 50%;
-    padding: 10px;
+    /* padding: 10px; */
   }
 
 }
