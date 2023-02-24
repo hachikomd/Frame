@@ -1547,6 +1547,10 @@ color: #444444;
   float: left;
   width: 50%;
 }
+.bccontent{
+  margin-top: 150px;
+  padding: 50px;
+}
 
 .colbc p{
   font-size: .7em;
@@ -1556,9 +1560,17 @@ color: #444444;
 
 }
 
+.colbc img{
+ width: 100%;
+}
+
 .colbc h4{
   color: #444444;
   }
+
+.logo_xl img{
+  width: 40%;
+}
 
 .rowbc:after {
   content: "";
@@ -1569,8 +1581,27 @@ color: #444444;
 .spacer{
   margin-top: 150px;
 }
+@media screen and (max-width: 1080px) {
 
+  .bccontent{
+    margin-top: 80px;
+    padding: 30px;
+  }
+  .colbc p{
+    font-size: .6em;
+    color: #444444;
+    text-align: left;
+    line-height: 28px;
+  
+  }
+}
 @media screen and (max-width: 780px) {
+  
+  .bccontent{
+    margin-top: 20px;
+    padding: 30px;
+  }
+  
   .colbc{
     float: left;
     width: 100%;
