@@ -265,7 +265,7 @@ input[type="checkbox"]:checked ~ label span:nth-child(3) {
 }
 
 .section1{
-  background-image: url('../img/herotop.png');
+  background-image: url('https://hachikomd.github.io/FRAME/ARKRAY14/img/herotop.png');
   width: 100%;
   height: 800px;
   margin-bottom: 50px;
@@ -314,7 +314,7 @@ select {
   font-size: .9em;
 }
 .section1{
-  background-image: url('img/herotop.png');
+  background-image: url('https://hachikomd.github.io/FRAME/ARKRAY14/img/herotop.png');
   height: 480px;
   position: relative;
   background-repeat: no-repeat;
@@ -342,7 +342,7 @@ select {
 @media screen and (max-width: 414px) {
   
   .section1{
-    background-image: url('img/herotop.png');
+    background-image: url('https://hachikomd.github.io/FRAME/ARKRAY14/img/herotop.png');
     height: 430px;
     position: relative;
     background-repeat: no-repeat;
@@ -415,7 +415,7 @@ select {
 
 
 .section3{
-  background-image: url('img/sec3.png');
+  background-image: url('https://hachikomd.github.io/FRAME/ARKRAY14/img/sec3.png');
   height: 100%;
   position: relative;
   background-repeat: no-repeat;
@@ -433,7 +433,7 @@ select {
     font-size: 1em;
    }
   .section3{
-    background-image: url('img/sec3.png');
+    background-image: url('https://hachikomd.github.io/FRAME/ARKRAY14/img/sec3.png');
     height: auto;
     position: relative;
     background-repeat: no-repeat;
@@ -447,7 +447,7 @@ select {
 @media screen and (max-width: 1080px) {
  
   .section3{
-    background-image: url('img/sec3.png');
+    background-image: url('https://hachikomd.github.io/FRAME/ARKRAY14/img/sec3.png');
     height: auto;
     position: relative;
     background-repeat: no-repeat;
@@ -2098,7 +2098,7 @@ color: #444444;
 
 
 .secinq{
-  background-image: url('img/kyoto\ lab3.png');
+  background-image: url('https://hachikomd.github.io/FRAME/ARKRAY14/img/kyoto\ lab3.png');
   background-repeat: no-repeat;
   background-size: 100%;
   height: auto;
@@ -2322,7 +2322,7 @@ padding: 10px;
 
 
 .secsitemap{
-  background-image: url('img/kyoto\ lab3.png');
+  background-image: url('https://hachikomd.github.io/FRAME/ARKRAY14/img/kyoto\ lab3.png');
   background-repeat: no-repeat;
   background-size: 100%;
   height: 700px;
