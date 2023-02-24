@@ -1313,7 +1313,30 @@ color: #444444;
   clear: both;
 }
 
+#philcontent{
+  text-align: center; 
+  padding:50px;
+}
+@media screen and (max-width: 1080px) {
+  .colphil p{
+    font-size: .8em;
+    color: #444444;
+    }
+    #philcontent{
+      text-align: center; 
+      padding-left:50px;
+      padding-right:50px;
+      padding-top: 10px;
+    }
+}
+
 @media screen and (max-width: 780px) {
+  #philcontent{
+    text-align: center; 
+    padding-left:50px;
+    padding-right:50px;
+    padding-top: 20px;
+  }
   .colphil{
     float: left;
     width: 100%;
