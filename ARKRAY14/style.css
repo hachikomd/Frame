@@ -1479,6 +1479,7 @@ color: #444444;
     font-size: 1em;
     font-weight: lighter;
     color: #686868;
+    margin-bottom: -50px;
   }
 }
 
@@ -1729,6 +1730,8 @@ color: #444444;
 }
 
 .tab a{
+  font-family: Roboto;
+  font-weight: 600;
   font-size: 1.5em;
   padding-left: 30px;
   padding-right: 30px;
@@ -1742,10 +1745,19 @@ color: #444444;
   }
 
   @media screen and (max-width: 780px) {
+ 
     .tab a{
-      font-size: 1.5em;
+      font-size: 1.2em;
       padding-left: 5px;
       padding-right: 5px;
+    }
+  
+  }
+
+  @media screen and (max-width: 414px) {
+ 
+    .tab {
+     margin: 5px;
     }
   
   }
